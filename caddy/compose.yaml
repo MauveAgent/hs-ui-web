@@ -11,6 +11,7 @@ services:
       - ./container-data:/data
       - ./container-config:/config
       - /etc/localtime:/etc/localtime:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     ports:
       - 80:80
       - 443:443
